@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 15-03-22</title>
+    <style>
+
+        body html {
+            margin: 10px;
+            height: 100%;
+            width: 100%;
+        }
+
+        p{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            align-items: center;
+            width: 1000px;
+            height: 80%;
+            margin: 0;
+        }
+        #header{
+            background-color: aqua;
+            width: 1000px;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 10px 5px 5px black;
+            margin: 10px;
+            padding: 0px;
+        }
+        #footer{
+            background-color: aqua;
+            width: 1000px;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 10px 5px 5px black;
+            margin: 10px;
+            padding: 0px;
+        }
+
+        #main {
+
+            background-color: rgb(89, 128, 98);
+            width: 75%;
+            height: 550px;
+            margin: 10px;
+            box-shadow: 10px 5px 5px black;
+            border-radius: 5%;
+
+        }
+
+        #sidebar {
+            background-color: rgb(247, 72, 72);
+            width: 25%;
+            height: 550px;
+            margin: 10px;
+            box-shadow: 10px 5px 5px black;
+            border-radius: 5%;
+        }
+
+        .box{
+           background-color: darkgreen;
+           align-self: flex-start;
+           border-radius: 50%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li{
+            display: inline-block;
+        }
+        
+        li{
+            width: 25%;
+            margin: 10px;
+            box-shadow: 10px 5px 5px black;
+            height: 100px;
+            text-align: center;
+        }
+
+        .null{
+            background-color: 0;
+            width: 25%;
+            margin: 10px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: none;
+        }
+
+        .btn {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(9, 180, 3);
+            box-shadow: black;
+        }
+        .btn2 {
+            padding: 50px;
+            color: black;
+        }
+        .btn:hover{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(7, 146, 3);
+            box-shadow: black;
+        }
+        .btn:active{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            background-color: rgb(5, 100, 1);
+            box-shadow: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" ><p><h1>header</h1></p></div>
+    <div id="container">
+        <div id="main" class="btn">
+            <p><h1>main</h1></p>
+            <ul>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+            </ul>
+            <ul>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+                <li class="btn">item</li>
+            </ul>
+            <ul>
+                <li class="btn">item</li>
+                <li class="null"></li>
+                <li class="null"></li>
+                <li class="null"></li>
+            </ul>
+        </div>
+        <div id="sidebar" class="btn"><p><h1>sidebar</h1></p></div>
+    </div>
+    <div id="footer">
+        <p><h1>footer</h1></p>
+    </div>
+</body>
